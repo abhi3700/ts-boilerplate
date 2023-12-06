@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
-    "test": "jest",
+    "clean": "rm -rf dist",
+    "clean:all": "rm -rf dist && rm -rf node_modules",
+    "start": "tsc && node dist/index.js",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write \"src/**/*.ts\"",
     "prepare": "npm run build",
     "doc": "typedoc",
-    "clean": "rimraf dist && rimraf node_modules",
     "example": "tsc && node dist/examples/example.js"
   },
   "keywords": [],
