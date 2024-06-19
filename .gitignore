@@ -2,4 +2,5 @@ node_modules/
 dist/
 *.js
 yarn-error.log
-.nyc_output/
+.yarn/
+.yarnrc.yml
